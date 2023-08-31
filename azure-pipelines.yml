@@ -46,8 +46,7 @@ jobs:
 
 - job: WaitForAzureMLJobCompletion
   displayName: Wait for AzureML Job Completion
-  pool: 
-    vmImage: ubuntu-latest
+  pool: server
   timeoutInMinutes: 0
   dependsOn: SubmitAzureMLJob
   variables: 
